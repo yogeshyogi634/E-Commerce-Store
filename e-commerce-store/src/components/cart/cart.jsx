@@ -1,7 +1,7 @@
 import { useCallback, useContext } from "react";
 import { CartContext } from "../../context/cart-context";
 import useRazorpay from "react-razorpay";
-import "./cart.css"
+// import "./cart.css"
 
 const Cart = () => {
     const { cartData } = useContext(CartContext);
@@ -52,10 +52,10 @@ const Cart = () => {
                             <>
                                 <section className="card">
                                     <img className="card-image" src={"http://localhost:1337" + cartItem.image.data.attributes.url} alt={cartItem.title} />
-                                    <article className="card-title">{cartItem.title}</article>
-                                    <article className="card-description">{cartItem.description}</article>
+                                    <p className="card-title">{cartItem.title}</p>
+                                    <p className="card-description">{cartItem.description}</p>
                                     <section className="card-footer">
-                                        <article className="price">₹ {cartItem.price}</article>
+                                        <p className="price">₹ {cartItem.price}</p>
                                         <button>Remove</button>
                                     </section>
                                 </section>
@@ -66,19 +66,19 @@ const Cart = () => {
                     })}
                 </section>
                 <section className="bill-container">
-                    <article className="logo">Billing information</article>
+                    <p className="logo">Billing information</p>
                     <section className="bill-wrapper">
                         <ol>
                             {cartData.map((cartItem) => {
                                 return (
                                     <li key={cartItem.id}>
-                                        <article>{cartItem.title}</article>
-                                        <article>₹ {cartItem.price}</article>
+                                        <p>{cartItem.title}</p>
+                                        <p>₹ {cartItem.price}</p>
                                     </li>
                                 );
                             })}
                         </ol>
-                        <article>Total Price: ₹ {calculateTotalPrice()}</article>
+                        <p>Total Price: ₹ {calculateTotalPrice()}</p>
                         <button onClick={() => { razorpayDisplay(calculateTotalPrice()) }}>
                             CheckOut
                         </button>

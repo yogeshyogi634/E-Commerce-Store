@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import "./header.css"
 import { CartContext } from "../../context/cart-context"
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 const Header=()=>{
     const {cartData}=useContext(CartContext)
     const navigate=useNavigate()
@@ -20,4 +20,4 @@ const Header=()=>{
         </>
     )
 }
-export default Header
+export default Header;

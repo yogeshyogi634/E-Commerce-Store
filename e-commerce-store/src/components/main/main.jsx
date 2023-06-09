@@ -27,7 +27,7 @@ const Main = () => {
             <Header />
 
             <section className="content-wrapper">
-                <article className="actions">OldsSchool</article>
+                <article className="actions">Old-School</article>
                 <div className="div">
                     {oldschool.map((item, key) => {
                         return <Item key={key} item={item.attributes} />
