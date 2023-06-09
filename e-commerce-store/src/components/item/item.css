@@ -1,0 +1,27 @@
+.card{
+    margin: 20px;
+   width: 300px;
+   
+}
+.card-image{
+   margin-left: 15px;
+    width: 270px;
+    height: 300px;
+}
+.card-title{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+.card-description{
+    text-align:justify;
+    margin: 10px;
+}
+.card-footer{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+}

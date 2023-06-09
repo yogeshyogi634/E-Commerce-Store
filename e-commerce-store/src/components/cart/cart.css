@@ -1,0 +1,17 @@
+.cart-wrapper{
+    color: white;
+    
+}
+.cart-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .bill-container{
+    text-align: center;
+    
+  }
+  .bill-wrapper{
+    margin-left: 660px;
+    width: 200px;
+  }

@@ -1,0 +1,22 @@
+.content-wrapper{
+    display: block;
+    padding-top: 62px;
+    background-color: black;
+    color: white;
+}
+.actions{
+    margin: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+.bestseller{
+    margin: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+.div{
+    display: flex;
+    margin: 50px
+}
